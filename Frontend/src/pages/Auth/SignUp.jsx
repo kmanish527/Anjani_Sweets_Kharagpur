@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export default function SignUp() {
@@ -177,10 +176,11 @@ export default function SignUp() {
             value={formData.confirmPassword}
             onChange={handleChange}
             className={`w-full px-4 py-2 pr-10 border ${
-              passwordMismatch ? "border-red-500" : "border-gray-300"
-            } rounded-md focus:outline-none focus:ring-1 ${
-              passwordMismatch ? "focus:ring-red-500" : "focus:ring-white"
-            }`}
+  passwordMismatch ? "border-red-500" : "border-gray-300"
+} rounded-md focus:outline-none focus:ring-1 ${
+  passwordMismatch ? "focus:ring-red-500" : "focus:ring-white"
+}`}
+
           />
           <span
             className="absolute right-3 top-9 cursor-pointer text-white"
@@ -219,6 +219,7 @@ export default function SignUp() {
         </button>
    
       </form>
+    
     </div>
   );
 }
